@@ -1,0 +1,275 @@
+<!-- HTML file: index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damal Healthcare</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png.png" alt="Damal Healthcare Logo">
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#book">Book</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Carousel -->
+    <section id="home" class="hero">
+        <div class="carousel">
+            <div class="carousel-slide" id="slide-1">
+                <img src="IMG_6614.JPG" alt="Aesthetic and Rejuvenation Services">
+            </div>
+            <div class="carousel-slide" id="slide-2">
+                <img src="IMG_6654.JPG" alt="Diabetes Care Services">
+            </div>
+            <div class="carousel-slide" id="slide-3">
+                <img src="IMG_6659.JPG" alt="General Outpatient Services">
+            </div>
+            <!-- Add more slides as needed -->
+        </div>
+        <div class="hero-content">
+            <h2>Rejuvenate, Heal, Thrive with Damal</h2>
+            <a href="https://wa.me/0758273348" class="cta-button">Book an Appointment</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <!-- Service Item 1: Aesthetic and Rejuvenation -->
+                <div class="service">
+                    <img src="Phone BG final.mp4" alt="Aesthetic and Rejuvenation">
+                    <h3>Aesthetic and Rejuvenation</h3>
+                    <p>We offer PRP therapy, microneedling, skin rejuvenation, and more to help you look and feel your best.</p>
+                    <button class="toggle-details" onclick="toggleDetails('details1')">More Details</button>
+                    <div id="details1" class="service-details" style="display: none;">
+                        <p>Our aesthetic services are designed to boost your confidence with personalized treatment plans. We offer:</p>
+                        <ul>
+                            <li><strong>PRP Therapy (Platelet-Rich Plasma):</strong> Used for both skin rejuvenation and hair restoration, helping to stimulate collagen production and cell regeneration.</li>
+                            <li><strong>Microneedling:</strong> Promotes collagen and elastin production by creating controlled micro-injuries on the skin, helping reduce acne scars, stretch marks, and fine lines.</li>
+                            <li><strong>Glutathione Therapy:</strong> An intravenous antioxidant treatment for detoxification and skin brightening, helping achieve an even skin tone.</li>
+                            <li><strong>IV Vitamin Therapy:</strong> Customized vitamin cocktails administered via IV to promote overall skin health, hydration, and a glowing skin tone.</li>
+                            <li><strong>Anti-Aging Treatments:</strong> Collagen boosters and wrinkle reduction treatments such as botox to reduce the appearance of fine lines and wrinkles.</li>
+                            <li><strong>Scar Revision and Keloid Treatments:</strong> Specialized scar treatments to reduce scar size and improve appearance using corticosteroid injections, laser therapy, and silicone sheets.</li>
+                            <li><strong>Facial Contouring:</strong> Non-surgical options to contour facial features, such as dermal fillers for lips, cheeks, and jawline to enhance facial symmetry.</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <!-- Service Item 2: Diabetes Care -->
+                <div class="service">
+                    <img src="images/service2.jpg" alt="Diabetes Care">
+                    <h3>Diabetes Care</h3>
+                    <p>Comprehensive diabetes management, monitoring, dietary plans, and foot care services.</p>
+                    <button class="toggle-details" onclick="toggleDetails('details2')">More Details</button>
+                    <div id="details2" class="service-details" style="display: none;">
+                        <p>Our diabetes care program includes:</p>
+                        <ul>
+                            <li><strong>Blood Glucose Monitoring:</strong> Regular monitoring to keep your blood sugar levels in check.</li>
+                            <li><strong>Individualized Dietary Planning:</strong> Customized meal plans to help manage diabetes effectively.</li>
+                            <li><strong>Foot Care:</strong> Prevention and management of diabetes-related foot complications through regular check-ups and specialized care.</li>
+                            <li><strong>Patient Education:</strong> Providing tools and knowledge to help patients live a healthier lifestyle and manage their condition independently.</li>
+                            <li><strong>Medication Management:</strong> Ensuring that patients take their diabetes medication correctly and safely.</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <!-- Service Item 3: General Outpatient -->
+                <div class="service">
+                    <img src="images/service3.jpg" alt="General Outpatient">
+                    <h3>General Outpatient</h3>
+                    <p>Routine check-ups, preventive healthcare, chronic disease management, and prescription services.</p>
+                    <button class="toggle-details" onclick="toggleDetails('details3')">More Details</button>
+                    <div id="details3" class="service-details" style="display: none;">
+                        <p>Our outpatient services include:</p>
+                        <ul>
+                            <li><strong>Routine Check-Ups:</strong> Regular health assessments to catch potential issues early.</li>
+                            <li><strong>Preventive Healthcare:</strong> Immunizations, screenings, and lifestyle advice to maintain your health.</li>
+                            <li><strong>Chronic Disease Management:</strong> Comprehensive care for chronic conditions such as hypertension, asthma, and arthritis.</li>
+                            <li><strong>Prescription Support:</strong> Timely prescriptions and medication management to ensure continuity of care.</li>
+                            <li><strong>Minor Procedures:</strong> On-site minor surgical procedures such as wound suturing, incision, and drainage.</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <!-- Service Item 4: Wound Care -->
+                <div class="service">
+                    <img src="images/service4.jpg" alt="Wound Care">
+                    <h3>Wound Care</h3>
+                    <p>Expert care for acute and chronic wounds, including dressing changes, infection management, and debridement.</p>
+                    <button class="toggle-details" onclick="toggleDetails('details4')">More Details</button>
+                    <div id="details4" class="service-details" style="display: none;">
+                        <p>We provide specialized wound care services including:</p>
+                        <ul>
+                            <li><strong>Acute and Chronic Wounds:</strong> Treatment for wounds that require ongoing care.</li>
+                            <li><strong>Dressing Changes:</strong> Proper and timely dressing changes to promote healing and prevent infections.</li>
+                            <li><strong>Infection Management:</strong> Monitoring and treating wound infections to accelerate recovery.</li>
+                            <li><strong>Advanced Wound Healing Therapies:</strong> Techniques like debridement and hyperbaric oxygen therapy to facilitate quicker healing.</li>
+                            <li><strong>Pressure Ulcer Prevention:</strong> Preventive care to reduce the risk of developing pressure sores, especially in bedridden patients.</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <!-- Service Item 5: Home Care -->
+                <div class="service">
+                    <img src="images/service5.jpg" alt="Home Care">
+                    <h3>Home Care</h3>
+                    <p>Home-based services, elderly care, and rehabilitation support tailored to your needs.</p>
+                    <button class="toggle-details" onclick="toggleDetails('details5')">More Details</button>
+                    <div id="details5" class="service-details" style="display: none;">
+                        <p>Our home care services include:</p>
+                        <ul>
+                            <li><strong>Nursing Care:</strong> Skilled nurses provide medical assistance at home for recovery and support.</li>
+                            <li><strong>Elderly Care:</strong> Assistance with daily activities for seniors to help maintain independence.</li>
+                            <li><strong>Rehabilitation Support:</strong> Physical and occupational therapy to help regain strength and mobility.</li>
+                            <li><strong>Daily Living Assistance:</strong> Help with grooming, bathing, meal preparation, and medication reminders.</li>
+                            <li><strong>Palliative Care:</strong> Compassionate care for individuals with serious illnesses, focused on improving quality of life through pain management and emotional support.</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <!-- Service Item 6: Specialist Consultations -->
+                <div class="service">
+                    <img src="images/service6.jpg" alt="Specialist Consultations">
+                    <h3>Specialist Consultations</h3>
+                    <p>Consult with our specialists in cardiology, endocrinology, pediatrics, and more.</p>
+                    <button class="toggle-details" onclick="toggleDetails('details6')">More Details</button>
+                    <div id="details6" class="service-details" style="display: none;">
+                        <p>Our specialists offer consultations in the following areas:</p>
+                        <ul>
+                            <li><strong>Cardiology:</strong> Diagnosis and treatment of heart-related conditions, including hypertension, arrhythmia, and coronary artery disease.</li>
+                            <li><strong>Endocrinology:</strong> Expert care for hormonal disorders such as diabetes, thyroid problems, and adrenal gland issues.</li>
+                            <li><strong>Pediatrics:</strong> Comprehensive care for infants, children, and adolescents, including immunizations, growth monitoring, and developmental assessments.</li>
+                            <li><strong>Neurology:</strong> Evaluation and treatment of neurological conditions, including epilepsy, migraines, and neurodegenerative disorders.</li>
+                            <li><strong>Dermatology:</strong> Diagnosis and treatment of skin, hair, and nail conditions, including acne, eczema, and psoriasis.</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <!-- Service Item 7: Medical Tourism -->
+                <div class="service">
+                    <img src="images/service7.jpg" alt="Medical Tourism">
+                    <h3>Medical Tourism</h3>
+                    <p>Health packages for international patients, pre- and post-treatment care, and accommodation assistance.</p>
+                    <button class="toggle-details" onclick="toggleDetails('details7')">More Details</button>
+                    <div id="details7" class="service-details" style="display: none;">
+                        <p>We offer comprehensive packages for international patients, including:</p>
+                        <ul>
+                            <li><strong>Pre-Treatment Consultation:</strong> Virtual or in-person consultations to prepare patients for procedures and assess medical needs.</li>
+                            <li><strong>Post-Treatment Care:</strong> Follow-up services to ensure successful recovery after medical procedures, including physical therapy and medication management.</li>
+                            <li><strong>Accommodation Assistance:</strong> Assistance with travel and accommodation arrangements for patients and their families, ensuring comfort and convenience.</li>
+                            <li><strong>Medical Concierge Services:</strong> Dedicated assistance throughout the treatment journey, including translation services and local support.</li>
+                            <li><strong>Health Packages:</strong> Tailored healthcare packages that include transportation, accommodation, and treatment services to ensure a seamless experience.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+     <!-- Blog Section -->
+     <section id="blog" class="blog">
+        <div class="container">
+            <h2>Our Blog</h2>
+            <div class="blog-post">
+                <h3>Understanding Diabetes Care</h3>
+                <p>Learn more about managing diabetes, dietary plans, and monitoring techniques to lead a healthier life.</p>
+            </div>
+            <div class="blog-post">
+                <h3>Benefits of Aesthetic Treatments</h3>
+                <p>Explore how aesthetic treatments like microneedling and PRP can boost your confidence and improve your skin health.</p>
+            </div>
+
+                    <!-- New Blog Post -->
+        <div class="blog-post">
+            <h3>The Ultimate Guide to Aesthetic Treatments: PRP, Microneedling, Skin Brightening, and More</h3>
+            <p>Are you considering an aesthetic treatment but unsure which one is best for your needs? With so many options available—ranging from PRP (Platelet-Rich Plasma) therapy, microneedling, and skin brightening to hair regrowth solutions—it can be overwhelming to decide where to start. In this comprehensive guide, we’ll answer the most common questions about these treatments and help you understand the benefits, procedures, and results you can expect.</p>
+            <p><strong>What Is PRP Therapy and How Does It Work?</strong></p>
+            <p>Platelet-Rich Plasma (PRP) therapy is a treatment that involves using your body's own platelets to stimulate cell growth and healing. This treatment is popular for both skin rejuvenation and hair regrowth...</p>
+            <a href="full-post.html" class="read-more">Read More</a>
+        </div>
+
+            <!-- Add more blog posts as needed -->
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <div class="testimonial">
+                <p>"Damal Healthcare has transformed my life. The PRP therapy worked wonders for my skin!"</p>
+                <p class="author">- Amina K.</p>
+            </div>
+            <div class="testimonial">
+                <p>"The team at Damal is incredibly supportive. They made managing my diabetes so much easier."</p>
+                <p class="author">- Hassan M.</p>
+            </div>
+            <!-- Add more testimonials as needed -->
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Phone: <a href="tel:0758273348">0758273348</a></p>
+            <p>Email: <a href="mailto:damalhealth@gmail.com">damalhealth@gmail.com</a></p>
+            <p><a href="https://wa.me/0758273348" target="_blank">Chat with us on WhatsApp</a></p>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Action Button (FAB) Menu for Mobile -->
+    <div class="fab-menu">
+        <button class="fab-button">+</button>
+        <div class="fab-options">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#blog">Blog</a>
+            <a href="#book">Book</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
+            <a href="https://wa.me/0758273348" target="_blank">WhatsApp</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Damal Healthcare. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleDetails(id) {
+            const details = document.getElementById(id);
+            details.style.display = details.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
